@@ -1,14 +1,15 @@
 -- Complementary pattern for Haskell
 -- Each type is a record of functions implementing its operations
 -- Each constructor returns a set of behaviors, new types can be added without changing code
+-- add and multiply are shown as examples of adding new types
 
-data Expr = Expr { pretty :: String, eval :: Int }
+data Expr = Expr { string :: String, int :: Int }
 
 lit :: Int -> Expr
-lit n = Expr { pretty = show n, eval = n }
+lit n = Expr { string = show n, int = n }
 
 add :: Expr -> Expr -> Expr
-add a b = Expr { pretty = "(" ++ pretty a ++ " + " ++ pretty b ++ ")" , eval   = eval a + eval b }
+add a b = Expr { string = "(" ++ string a ++ " + " ++ string b ++ ")" , int    = int a + int b }
 
 mul :: Expr -> Expr -> Expr
-mul a b = Expr { pretty = "(" ++ pretty a ++ " * " ++ pretty b ++ ")" , eval   = eval a * eval b }
+mul a b = Expr { string = "(" ++ string a ++ " * " ++ string b ++ ")" , int    = int a * int b }
