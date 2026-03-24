@@ -8,7 +8,6 @@ int main(int argc, const char* argv[]) {
   (void)argc;
   (void)argv;
 
-  // Allocate the single hardcore heap once, before any clox allocations happen.
   initMemory();
 
   Chunk chunk;

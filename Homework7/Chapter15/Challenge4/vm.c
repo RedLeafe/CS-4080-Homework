@@ -15,7 +15,6 @@ void initVM() {
 }
 
 void freeVM() {
-  // No heap allocations yet.
 }
 
 static void push(Value value) {
