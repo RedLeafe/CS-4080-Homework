@@ -1,0 +1,36 @@
+#ifndef CLOX_OBJECT_H
+#define CLOX_OBJECT_H
+
+#include "common.h"
+#include "value.h"
+
+typedef enum {
+  OBJ_STRING,
+} ObjType;
+
+struct Obj {
+  ObjType type;
+  struct Obj* next;
+};
+
+struct ObjString {
+  Obj obj;
+  bool ownsChars;
+  int length;
+  const char* chars;
+};
+
+#define OBJ_TYPE(value) (AS_OBJ(value)->type)
+
+static inline bool isObjType(Value value, ObjType type) {
+  return IS_OBJ(value) && AS_OBJ(value)->type == type;
+}
+
+#define IS_STRING(value) isObjType(value, OBJ_STRING)
+#define AS_STRING(value) ((ObjString*)AS_OBJ(value))
+#define AS_CSTRING(value) (((ObjString*)AS_OBJ(value))->chars)
+
+ObjString* makeString(bool ownsChars, char* chars, int length);
+void printObject(Value value);
+
+#endif
