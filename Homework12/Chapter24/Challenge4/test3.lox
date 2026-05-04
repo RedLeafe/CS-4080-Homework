@@ -1,0 +1,8 @@
+var n = 7;
+var msg = "count";
+
+print type(n);
+print type(msg);
+
+n = n + 1;
+print type(n);

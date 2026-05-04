@@ -1,0 +1,6 @@
+print type(42);
+print type(true);
+print type(false);
+print type(nil);
+print type("hello");
+print type(clock);
