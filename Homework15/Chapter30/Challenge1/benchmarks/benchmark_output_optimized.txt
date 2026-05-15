@@ -1,0 +1,12 @@
+Showing nodes accounting for 9.82s, 100% of 9.82s total
+      flat  flat%   sum%        cum   cum%
+     5.48s 55.80% 55.80%      9.82s   100%  _run
+     1.94s 19.76% 75.56%      1.94s 19.76%  _peek
+     1.07s 10.90% 86.46%      1.07s 10.90%  _pop
+     0.98s  9.98% 96.44%      0.98s  9.98%  _push
+     0.29s  2.95% 99.39%      0.29s  2.95%  _isFalsey
+     0.06s  0.61%   100%      0.06s  0.61%  _isObjType
+         0     0%   100%      9.82s   100%  [libc++.1.dylib]
+         0     0%   100%      9.82s   100%  _interpret
+         0     0%   100%      9.82s   100%  _main
+         0     0%   100%      9.82s   100%  _runFile

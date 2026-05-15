@@ -1,0 +1,23 @@
+Showing nodes accounting for 25.38s, 100% of 25.38s total
+Dropped 2 nodes (cum <= 0.13s)
+      flat  flat%   sum%        cum   cum%
+    10.87s 42.83% 42.83%     25.38s   100%  _run
+     2.93s 11.54% 54.37%     25.38s   100%  [libc++.1.dylib]
+     2.25s  8.86% 63.23%      2.54s 10.01%  _copyShortString
+     1.57s  6.19% 69.42%      1.57s  6.19%  _push
+     1.51s  5.95% 75.37%      1.51s  5.95%  _pop
+     1.04s  4.10% 79.47%      1.04s  4.10%  _peek
+     0.98s  3.86% 83.33%      4.99s 19.66%  _stringValuesEqual
+     0.58s  2.29% 85.62%      0.76s  2.99%  _stringValueLength
+     0.58s  2.29% 87.91%      0.58s  2.29%  _valueToNum
+     0.56s  2.21% 90.12%      4.11s 16.19%  _concatenate
+     0.50s  1.97% 92.09%      0.50s  1.97%  _isFalsey
+     0.48s  1.89% 93.98%      0.48s  1.89%  _shortStringLength
+     0.39s  1.54% 95.52%      5.38s 21.20%  _valuesEqual
+     0.35s  1.38% 96.90%      0.35s  1.38%  _shortStringVal
+     0.27s  1.06% 97.96%      2.09s  8.23%  _reallocate
+     0.23s  0.91% 99.13%      0.70s  2.76%  _copyStringValueChars
+     0.19s  0.87%   100%      1.55s  6.11%  _takeStringValue
+         0     0%   100%     25.38s   100%  _interpret
+         0     0%   100%     25.38s   100%  _main
+         0     0%   100%     25.38s   100%  _runFile
